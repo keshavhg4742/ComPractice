@@ -1,55 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[sssss]]>
+      <![CDATA[browser is launch]]>
+    </line>
+    <line>
+      <![CDATA[login sucess]]>
+    </line>
+    <line>
+      <![CDATA[enter next]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
+  <suite name="Default suite" duration-ms="6302" started-at="2022-11-18T20:22:32 IST" finished-at="2022-11-18T20:22:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-      <class name="testNGtest.BasicTags">
-        <test-method status="PASS" signature="ms()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="ms" is-config="true" duration-ms="11" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ms -->
-        <test-method status="PASS" signature="r()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="r" is-config="true" duration-ms="1" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- r -->
-        <test-method status="PASS" signature="m()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="m" is-config="true" duration-ms="0" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- m -->
-        <test-method status="PASS" signature="n()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="n" is-config="true" duration-ms="0" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
+    <test name="Default test" duration-ms="6302" started-at="2022-11-18T20:22:32 IST" finished-at="2022-11-18T20:22:38 IST">
+      <class name="testNGtest.DependsMethod">
+        <test-method status="PASS" signature="launch()[pri:0, instance:testNGtest.DependsMethod@23fe1d71]" name="launch" duration-ms="5673" started-at="2022-11-18T20:22:32 IST" finished-at="2022-11-18T20:22:38 IST">
           <reporter-output>
             <line>
-              <![CDATA[sssss]]>
+              <![CDATA[browser is launch]]>
             </line>
           </reporter-output>
-        </test-method> <!-- n -->
-        <test-method status="PASS" signature="s()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="s" duration-ms="6" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testNGtest.DependsMethod@23fe1d71]" name="login" duration-ms="570" started-at="2022-11-18T20:22:38 IST" depends-on-methods="testNGtest.DependsMethod.launch" finished-at="2022-11-18T20:22:38 IST">
           <reporter-output>
+            <line>
+              <![CDATA[login sucess]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- s -->
-        <test-method status="PASS" signature="na()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="na" is-config="true" duration-ms="1" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="next()[pri:0, instance:testNGtest.DependsMethod@23fe1d71]" name="next" duration-ms="0" started-at="2022-11-18T20:22:38 IST" depends-on-methods="testNGtest.DependsMethod.login" finished-at="2022-11-18T20:22:38 IST">
           <reporter-output>
+            <line>
+              <![CDATA[enter next]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- na -->
-        <test-method status="PASS" signature="mo()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="mo" is-config="true" duration-ms="0" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mo -->
-        <test-method status="PASS" signature="rz()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="rz" is-config="true" duration-ms="1" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rz -->
-        <test-method status="PASS" signature="mss()[pri:0, instance:testNGtest.BasicTags@704d6e83]" name="mss" is-config="true" duration-ms="2" started-at="2022-11-15T18:55:37 IST" finished-at="2022-11-15T18:55:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mss -->
-      </class> <!-- testNGtest.BasicTags -->
+        </test-method> <!-- next -->
+      </class> <!-- testNGtest.DependsMethod -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
