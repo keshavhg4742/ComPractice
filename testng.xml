@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <parameter name="city" value="bangalore"></parameter>
   <classes>
- <!--  <class name="testNGtest.BasicTags"></class> -->
+   <class name="testNGtest.PassParameters"></class> 
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
