@@ -11,7 +11,7 @@ public class SoftAssertExam {
 	public void test() {
 		SoftAssert softAssert = new SoftAssert();
 		Reporter.log("softassert test begins",true);
-		try{
+		try{					//(act val,expt val)
 			softAssert.assertEquals("sbc", "bgm");
 		}catch (Exception e) {
 			System.err.println("assert fails");
@@ -19,7 +19,7 @@ public class SoftAssertExam {
 		Reporter.log("softassert test end",true);
 		//to tell the softAssetion to throw the exception 
 		//otherwise it execute normal but not throw exception
-		//softAssert.assertAll();
+		softAssert.assertAll();
 	}
 	@Test
 	public void test1() {

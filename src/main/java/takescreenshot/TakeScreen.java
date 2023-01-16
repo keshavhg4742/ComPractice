@@ -31,5 +31,17 @@ public class TakeScreen {
 		 
 		
 	}
+	public static void failed(String getMethodName, WebDriver ds) {
+		 TakesScreenshot ts = (TakesScreenshot)ds;
+		 File srcfile = ts.getScreenshotAs(OutputType.FILE);
+		 try {
+			FileUtils.copyFile(srcfile, new File(".\\screenshot\\"+getMethodName+".png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 
+		
+	}
 
 }
